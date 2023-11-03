@@ -1,0 +1,6 @@
+[
+  { "name": "All", "mal_id": "" },
+  { "name": "complete", "mal_id": "complete" },
+  { "name": "airing", "mal_id": "airing" },
+  { "name": "upcoming", "mal_id": "upcoming" }
+]

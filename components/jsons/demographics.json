@@ -1,0 +1,32 @@
+[
+  {
+  "mal_id": 43,
+  "name": "Josei",
+  "url": "https://myanimelist.net/anime/genre/43/Josei",
+  "count": 152
+  },
+  {
+  "mal_id": 15,
+  "name": "Kids",
+  "url": "https://myanimelist.net/anime/genre/15/Kids",
+  "count": 6163
+  },
+  {
+  "mal_id": 42,
+  "name": "Seinen",
+  "url": "https://myanimelist.net/anime/genre/42/Seinen",
+  "count": 987
+  },
+  {
+  "mal_id": 25,
+  "name": "Shoujo",
+  "url": "https://myanimelist.net/anime/genre/25/Shoujo",
+  "count": 473
+  },
+  {
+  "mal_id": 27,
+  "name": "Shounen",
+  "url": "https://myanimelist.net/anime/genre/27/Shounen",
+  "count": 1905
+  }
+  ]

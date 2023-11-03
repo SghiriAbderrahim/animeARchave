@@ -1,0 +1,9 @@
+[
+  { "name": "All", "mal_id": "" },
+  { "name": "All Ages", "mal_id": "g" },
+  { "name": "Children", "mal_id": "pg" },
+  { "name": "+13", "mal_id": "pg13" },
+  { "name": "+17", "mal_id": "r17" },
+  { "name": "Adult", "mal_id": "r" },
+  { "name": "+18", "mal_id": "rx" }
+]
