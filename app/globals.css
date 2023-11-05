@@ -11,7 +11,7 @@
 }
 
 :root {
-  --nb-color: 180;
+  --nb-color: 10;
 }
 .dark:root {
   --tx: white;

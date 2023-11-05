@@ -6,7 +6,7 @@ import AnimeDetails from '../../../components/anime/AnimeDetails';
 import AnimeEpisodes from '../../../components/anime/AnimeEpisodes';
 import AnimeCharacters from '../../../components/anime/AnimeCharacters';
 import AnimePictures from '../../../components/anime/AnimePictures';
-
+ 
 const selectSection = (selected)=>{
 const sections=document.querySelectorAll('section');
 sections.forEach((item)=>{
