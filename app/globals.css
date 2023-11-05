@@ -14,10 +14,10 @@
   --nb-color: 10;
 }
 .dark:root {
-  --tx: white;
-  --color-60: hsl(var(--nb-color), 100%, 1%);
-  --color-30: hsl(var(--nb-color), 100%, 6%);
-  --color-10: hsl(var(--nb-color), 100%, 60%);
+  --tx: #f5fafa;
+  --color-60: #17224d;
+  --color-30: #007fff;
+  --color-10: #17e9e1;
   --gr: rgb(32, 32, 32);
   --gr2: rgb(173, 173, 173);
 }
