@@ -172,8 +172,8 @@ export default function FilterContainer() {
         !show ? 'hidden' : null
       } grid place-items-center fixed backdrop-opacity-10 backdrop-invert bg-black/90  top-0 left-0 w-screen h-screen  fill-[var(--tx)] `}
     >
-      <div className=" grid grid-rows-6 bg-[var(--color-60)] w-3/4 max-w-[550px] h-4/5 max-h-[30rem] rounded-md border-2 border-[var(--gr2)]">
-        <div className="flex justify-between items-center w-full py-2 px-6 fill-[var(--color-10)] ">
+      <div className=" grid grid-rows-6 bg-[var(--bg)] w-3/4 max-w-[550px] h-4/5 max-h-[30rem] rounded-md border-2 border-[var(--gr2)]">
+        <div className="flex justify-between items-center w-full py-2 px-6 fill-[var(--theme-color)] ">
           <p className="font-bold text-xl ">Filter :</p>
         </div>
 
@@ -198,7 +198,7 @@ export default function FilterContainer() {
               setReLoad();
               setFilterShow(false);
             }}
-            className="font-bold hover:bg-[var(--color-60)] text-[var(--color-10)] py-1 px-3 rounded-full "
+            className="font-bold hover:bg-[var(--bg)] text-[var(--theme-color)] py-1 px-3 rounded-full "
           >
             Ok
           </button>

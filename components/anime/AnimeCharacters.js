@@ -69,7 +69,7 @@ export default function AnimeCharacters(promps) {
 
         
           <div className="w-full h-1/2 flex md:text-xs text-[0.6rem] font-semibold justify-between p-1">
-            <p className="flex gap-1 fill-[var(--color-10)] text-[var(--color-10)] ">
+            <p className="flex gap-1 fill-[var(--theme-color)] text-[var(--theme-color)] ">
               <Heart />
               {item.favorites}
             </p>

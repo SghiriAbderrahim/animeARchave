@@ -64,7 +64,7 @@ export default function NaveBar() {
 
   return (
     <nav
-      className=" fixed z-50 left-0 top-0  flex w-screen items-center justify-between p-6 lg:px-8 h-8 bg-[var(--color-60)] border-b border-[var(--gr)]"
+      className=" fixed z-50 left-0 top-0  flex w-screen items-center justify-between p-6 lg:px-8 h-8 bg-[var(--bg)] border-b border-[var(--gr)]"
       aria-label="Global"
     >
 
@@ -77,10 +77,10 @@ style={{ marginTop: pullChange<220?pullChange:220 || -70 }}
 <div className="refresh-icon p-2 rounded-full">
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    fill={pullChange >= 220 ? "var(--color-10)" : "white"}
+    fill={pullChange >= 220 ? "var(--theme-color)" : "white"}
     viewBox="0 0 16 16"
     strokeWidth={1}
-    stroke={pullChange >= 220 ? "var(--color-10)" : "white"}
+    stroke={pullChange >= 220 ? "var(--theme-color)" : "white"}
     className="w-6 h-6"
     style={{ transform: `rotate(${pullChange>=220?220:pullChange}deg)` }}
   >

@@ -43,19 +43,19 @@ export default function AnimeDetails(promps) {
                 className=" object-fill w-full h-full rounded"
               />
             </div>
-            <div className="col-span-2 p-1 self-center">
+            <div className="col-span-2 p-1 self-center text-[var(--gr3)]">
               <p className="lg:text-4xl text-xl mb-2">{data.title}</p>
-              <p className="lg:text-lg text-xs text-[var(--gr2)] ">
+              <p className="lg:text-lg text-xs text-[var(--gr3)] ">
                 {data.status == null ? '???? ???' : data.status}
               </p>
-              <p className="lg:text-lg text-xs text-[var(--gr2)]">{`${
+              <p className="lg:text-lg text-xs text-[var(--gr3)]">{`${
                 data.season == null ? '????' : data.season
               } - ${
                 data.aired.prop.from.year == null
                   ? '????'
                   : data.aired.prop.from.year
               }`}</p>
-              <p className="lg:text-lg text-xs text-[var(--gr2)]">{`${
+              <p className="lg:text-lg text-xs text-[var(--gr3)]">{`${
                 data.type == null ? '???' : data.type
               } - ${data.episodes == null ? '??' : data.episodes} episodes - ${
                 data.rating == null ? '????' : data.rating.split(' - ')[1]
@@ -88,7 +88,7 @@ export default function AnimeDetails(promps) {
                 ...data.themes,
               ].map((item,i) => {
                 return (
-                  <div key={i} className="whitespace-nowrap w-auto bg-[var(--color-30)] px-4 rounded-full font-semibold lg:text-lg text-sm">
+                  <div key={i} className="whitespace-nowrap w-auto bg-[var(--gr2)] px-4 rounded-full font-semibold lg:text-lg text-sm">
                     {item.name}
                   </div>
                 );
@@ -129,7 +129,7 @@ export default function AnimeDetails(promps) {
                 return (
                   <div key={i} >
                     <p className="lg:text-xl text-sm font-semibold">{item.name} :</p>
-                    <p className=" lg:text-lg text-xs font-semibold text-[var(--gr2)] ">
+                    <p className=" lg:text-lg text-xs font-semibold text-[var(--gr3)] ">
                       {item.value}
                     </p>
                   </div>

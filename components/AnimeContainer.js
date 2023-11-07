@@ -32,7 +32,7 @@ export default function AnimeContainer(promps) {
       className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden relative bg-[var(--gr)] "
       style={{ boxShadow: '0 0 5px var(--shadow)' }}
     >
-      <div className="absolute bg-[var(--color-30)] text-[var(--color-10)] font-bold text-xs top-1 left-1 rounded-md py-1 px-2 ">
+      <div className="absolute bg-[var(--gr)] text-[var(--theme-color)] font-bold text-xs top-1 left-1 rounded-md py-1 px-2 ">
         { anime.type}
       </div>
 

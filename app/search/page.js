@@ -84,7 +84,7 @@ export default function Search() {
             searching();
           }}
           id="inSearch"
-          className="outline-none text-[var(--tx)] text-sm font-bold w-3/4  px-2 py-1 border-2  bg-[var(--gr)] focus:bg-[var(--color-60)] rounded-full border-[var(--gr)] focus:border-[var(--color-10)] "
+          className="outline-none text-[var(--tx)] text-sm font-bold w-3/4  px-2 py-1 border-2  bg-[var(--gr2)] focus:bg-[var(--bg)] rounded-full border-[var(--gr2)] focus:border-[var(--theme-color)] "
           type="search"
           placeholder="Search for anime..."
         />

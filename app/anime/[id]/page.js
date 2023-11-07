@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <div className="w-screen h-screen overflow-hidden ">
       
-        <nav className="fixed top-12 w-full bg-[var(--color-60)] grid grid-flow-col justify-stretch justify-items-center pt-1 font-semibold z-20 border-b-[1px] border-[var(--gr)]">
+        <nav className="fixed top-12 w-full bg-[var(--bg)] grid grid-flow-col justify-stretch justify-items-center pt-1 font-semibold z-20 border-b-[1px] border-[var(--gr2)]">
           {conteners.map((item,i) => {
             return <a key={i} onClick={()=>{
               selectSection(item.name)
@@ -40,7 +40,7 @@ export default function Page() {
       <main>
       {conteners.map((item,i) => {
             return <section key={i} id={item.name} className="relative h-screen ">
-              <div className={` diva top-[4.6rem]  w-[25vw] h-[4px] rounded-full absolute z-20 bg-[var(--color-10)] `} style={{"--p":`${i*25}vw`}}></div>
+              <div className={` diva top-[4.6rem]  w-[25vw] h-[4px] rounded-full absolute z-20 bg-[var(--theme-color)] `} style={{"--p":`${i*25}vw`}}></div>
               <div className=" absolute bottom-0 w-full h-[85vh] overflow-auto">
               
               {item.div}

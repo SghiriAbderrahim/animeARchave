@@ -34,7 +34,7 @@ useEffect(() => {
           value === Selected ? true : false
         }
       />
-      <div className=" px-3 py-1 text-sm rounded-full font-semibold peer-checked:bg-[var(--color-10)] peer-checked:text-[var(--color-60)] text-[var(--tx)] bg-[var(--gr)] ">
+      <div className=" px-3 py-1 text-sm rounded-full font-semibold peer-checked:bg-[var(--theme-color)] peer-checked:text-[var(--bg)] text-[var(--tx)] bg-[var(--gr)] ">
         {name}
       </div>
     </label>

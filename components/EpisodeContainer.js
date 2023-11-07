@@ -46,7 +46,7 @@ export default function AnimeContainer(promps) {
         <p className=" [text-shadow:_0_0_10px_black] text-sm font-medium  w-full h-1/2 truncate text-center px-1">
           { anime.entry.title }
         </p>
-<p className="  w-full h-1/2 flex text-[var(--color-10)] text-xs font-bold justify-between p-1">
+<p className="  w-full h-1/2 flex text-[var(--theme-color)] text-xs font-bold justify-between p-1">
             {anime.episodes[0].title}
           </p>
       </div>

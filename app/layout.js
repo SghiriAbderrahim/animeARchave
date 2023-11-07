@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html className="dark h-screen">
-      <body className=" bg-[var(--color-60)] ">
+      <body className=" bg-[var(--bg)] ">
         <NaveBar />
         {children}
       </body>
