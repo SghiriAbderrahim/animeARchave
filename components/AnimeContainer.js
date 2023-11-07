@@ -29,7 +29,7 @@ export default function AnimeContainer(promps) {
   return (
     <Link href={`/anime/${anime.mal_id}`} key={anime.mal_id}>
     <div
-      className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden relative bg-[var(--gr)] "
+      className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden  bg-[var(--gr)] "
       style={{ boxShadow: '0 0 5px var(--shadow)' }}
     >
       <div className="absolute bg-[var(--gr)] text-[var(--theme-color)] font-bold text-xs top-1 left-1 rounded-md py-1 px-2 ">
@@ -47,7 +47,7 @@ export default function AnimeContainer(promps) {
         className=" object-fill w-full h-full"
       />
 
-      <div className="lg:text-[1.2vw]  sm:text-[2vw] text-[4vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
+      <div className="lg:text-[1.2vw]  sm:text-[2vw] text-[3vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
         <p className="col-span-2 [text-shadow:_0_0_10px_black]  font-medium  text-ellipsis whitespace-nowrap overflow-x-hidden text-center px-1">
           { anime.title}
         </p>

@@ -43,12 +43,12 @@ export default function AnimeCharacters(promps) {
   return (data == "empty" || data == undefined) ? (
     <Load />
   ) :(
-    <div className="w-full grid lg:grid-cols-8  sm:grid-cols-6 grid-cols-3 grid-cols-3 p-1 gap-1">
+    <div className="w-full grid lg:grid-cols-8  sm:grid-cols-6  grid-cols-3 p-1 gap-1">
 {data.map((item,i)=>{
   return(
     <div
     key={i}
-      className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden relative bg-[var(--gr)] "
+      className=" border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden relative bg-[var(--gr)] "
       style={{ boxShadow: '0 0 5px var(--shadow)' }}
     >
       <Image
@@ -62,7 +62,7 @@ export default function AnimeCharacters(promps) {
         className=" object-fill w-full h-full"
       />
 
-<div className="lg:text-[1vw]  sm:text-[1.5vw] text-[2.5vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
+<div className="lg:text-[1vw]  sm:text-[1.5vw] text-[2.2vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
         <p className="col-span-2 [text-shadow:_0_0_10px_black]  font-medium  text-ellipsis whitespace-nowrap overflow-x-hidden text-center px-1">
           { item.character.name}
         </p>
