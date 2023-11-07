@@ -47,19 +47,18 @@ export default function AnimeContainer(promps) {
         className=" object-fill w-full h-full"
       />
 
-      <div className="z-10 w-8 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
-        <p className=" [text-shadow:_0_0_10px_black] text-sm font-medium  w-full h-1/2 truncate text-center px-1">
+      <div className="lg:text-[1.2vw]  sm:text-[2vw] text-[4vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
+        <p className="col-span-2 [text-shadow:_0_0_10px_black]  font-medium  text-ellipsis whitespace-nowrap overflow-x-hidden text-center px-1">
           { anime.title}
         </p>
 
         
-          <div className="w-full h-1/2 flex text-xs font-bold justify-between p-1">
-            <p className="flex gap-1 fill-yellow-400 text-yellow-400">
+            <p className=" font-semibold p-1 items-center flex gap-1 fill-yellow-400 text-yellow-400">
               <Star />
               {anime.score}
             </p>
-            <p>{anime.aired.prop.from.year}</p>
-          </div>
+            <p className=' font-semibold justify-self-end p-1 place-self-center'>{anime.aired.prop.from.year}</p>
+          
         
       </div>
     </div>

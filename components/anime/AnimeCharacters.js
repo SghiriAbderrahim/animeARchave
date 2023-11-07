@@ -62,19 +62,18 @@ export default function AnimeCharacters(promps) {
         className=" object-fill w-full h-full"
       />
 
-      <div className="z-10 w-8 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
-        <p className=" [text-shadow:_0_0_10px_black] text-xs font-bold  w-full h-1/2 truncate text-center px-1">
+<div className="lg:text-[1vw]  sm:text-[1.5vw] text-[2.5vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
+        <p className="col-span-2 [text-shadow:_0_0_10px_black]  font-medium  text-ellipsis whitespace-nowrap overflow-x-hidden text-center px-1">
           { item.character.name}
         </p>
 
         
-          <div className="w-full h-1/2 flex md:text-xs text-[0.6rem] font-semibold justify-between p-1">
-            <p className="flex gap-1 fill-[var(--theme-color)] text-[var(--theme-color)] ">
+            <p className=" font-semibold p-1 items-center flex gap-1 fill-[var(--theme-color)] text-[var(--theme-color)] ">
               <Heart />
               {item.favorites}
             </p>
-            <p>{item.role}</p>
-          </div>
+            <p className=' font-semibold justify-self-end p-1 place-self-center'>{item.role}</p>
+          
         
       </div>
     </div>
