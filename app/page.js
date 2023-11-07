@@ -11,6 +11,7 @@ export default function Home() {
 
 
   //
+  const page = useSearch((state) => state.page);
   const setPage = useSearch((state) => state.setPage);
   const animeData = useSearch((state) => state.animeData);
   const setAnimeData = useSearch((state) => state.setAnimeData);
@@ -23,7 +24,7 @@ export default function Home() {
     setError(null);
 
     try {
-      const response = await fetch(`https://api.jikan.moe/v4/top/anime`);
+      const response = await fetch(`https://api.jikan.moe/v4/top/anime?page=${page}`);
       const data = await response.json();
 
       setAnimeData([...animeData, ...data.data]);
