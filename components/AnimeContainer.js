@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import { Star } from './svgs';
@@ -29,10 +30,10 @@ export default function AnimeContainer(promps) {
   return (
     <Link href={`/anime/${anime.mal_id}`} key={anime.mal_id}>
     <div
-      className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden  bg-[var(--gr)] "
+      className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden  bg-[var(--gr)]  hover:opacity-75"
       style={{ boxShadow: '0 0 5px var(--shadow)' }}
     >
-      <div className="absolute bg-[var(--gr)] text-[var(--theme-color)] font-bold text-[3vw] top-1 left-1 rounded-md py-1 px-2 ">
+      <div className="absolute bg-[var(--gr)] text-[var(--theme-color)] font-bold text-[70%] tracking-widest top-1 left-1 rounded-md py-1 px-2 z-50 ">
         { anime.type}
       </div>
 
@@ -41,10 +42,10 @@ export default function AnimeContainer(promps) {
         src={
           anime.images.jpg.large_image_url
         }
-        width={225}
-        height={385}
+        fill={true}
         alt={ anime.title}
-        className=" object-fill w-full h-full"
+        sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw'
+        className=" object-cover  "
       />
 
       <div className="lg:text-[1.2vw]  sm:text-[2vw] text-[3vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
