@@ -38,8 +38,7 @@ export default function Search() {
 
     try {
       const response = await fetch(
-        `https://api.jikan.moe/v4/anime?${genresValue}${producersValue}${typeValue}${statuValue}${ratingValue}&q=${searchValue}&order_by=${sortValue}&sort=${
-          sortDirection ? 'desc' : 'asc'
+        `https://api.jikan.moe/v4/anime?${genresValue}${producersValue}${typeValue}${statuValue}${ratingValue}&q=${searchValue}&order_by=${sortValue}&sort=${sortDirection ? 'desc' : 'asc'
         }&page=${page}`
       );
       const data = await response.json();
@@ -63,7 +62,7 @@ export default function Search() {
   const handleScroll = () => {
     if (
       window.innerHeight + window.pageYOffset >=
-        document.body.offsetHeight - 50 &&
+      document.body.offsetHeight - 50 &&
       !isLoading &&
       hasNext
     ) {
