@@ -48,13 +48,13 @@ export default function AnimePictures(promps) {
   return(
     <div
     key={i}
-      className=" relative border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden relative bg-[var(--gr)] "
+      className=" border-[var(--gr)] aspect-[1/1.5] rounded overflow-hidden relative bg-[var(--gr)] "
       style={{ boxShadow: '0 0 5px var(--shadow)' }}
     >
       <Image
         placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
         src={
-          item.jpg.image_url
+          item.jpg.large_image_url
         }
         width={225}
         height={385}

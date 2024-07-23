@@ -37,12 +37,18 @@ export default function SortContainer() {
   <SortChoose chooseName="Title" value="title"/>
 
 
-        <div className=" w-full py-3 pr-4 flex justify-end">
+        <div className=" w-full py-4 px-3 pr-4 flex justify-between">
+        <button onClick={()=>{
+
+setSortShow(false)}} className="font-bold hover:bg-[var(--gr2)] text-[var(--gr3)] hover:text-[var(--tx)]  px-3 rounded ">
+Cancel
+</button>
           <button onClick={()=>{
             setReLoad();
-            setSortShow(false)}} className="font-bold hover:bg-[var(--bg)] text-[var(--theme-color)] py-1 px-3 rounded-full ">
+            setSortShow(false)}} className="font-bold hover:bg-[var(--theme-color)] hover:text-[var(--bg)] text-[var(--theme-color)]  px-3 rounded ">
             Ok
           </button>
+          
         </div>
       </div>
     </div>
