@@ -125,6 +125,10 @@ export default function AnimeDetails(promps) {
                       ? '?????'
                       : data.studios[0].name,
                 },
+                {
+                  name: 'Episodes',
+                  value: data.episodes == null ? '????' : data.episodes,
+                },
               ].map((item,i) => {
                 return (
                   <div key={i} >
