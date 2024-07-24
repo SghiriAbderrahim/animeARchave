@@ -157,7 +157,7 @@ export default function AnimeDetails(promps) {
           </div>
           <div className=" w-full font-bold text-lg p-4 mt-4">
             <h1>Relations :</h1>
-            <div className="w-full overflow-hidden grid lg:grid-cols-8  sm:grid-cols-5 grid-cols-3 gap-2 py-3">
+            <div className="w-full overflow-hidden grid lg:grid-cols-8  sm:grid-cols-5 grid-cols-2 gap-2 py-3">
             {data.relations.map((item,i)=>{
             return <Relations key={i} data={item}/>
           })}

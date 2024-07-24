@@ -1,6 +1,6 @@
 [
   { "name": "All", "mal_id": "" },
-  { "name": "Series", "mal_id": "tv" },
+  { "name": "TV", "mal_id": "tv" },
   { "name": "Movie", "mal_id": "movie" },
   { "name": "Ona", "mal_id": "ona" },
   { "name": "Special", "mal_id": "special" },
