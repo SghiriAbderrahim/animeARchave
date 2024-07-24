@@ -18,7 +18,7 @@ export default function Page() {
   const path = usePathname();
   const id = path.split('/')[2];
 
-  const conteners = [{ name: "Details", div: <AnimeDetails id={id} /> }, { name: "Episodes", div: <AnimeEpisodes id={id} /> }, { name: "Characters", div: <AnimeCharacters id={id} /> }, { name: "Pictures", div: <AnimePictures id={id} /> }];
+  const conteners = [{ name: "Details", div: <AnimeDetails id={id} /> }, { name: "Characters", div: <AnimeCharacters id={id} /> }, { name: "Pictures", div: <AnimePictures id={id} /> }];
   useEffect(() => {
     console.log(path);
   }, [path])
@@ -30,7 +30,7 @@ export default function Page() {
         {conteners.map((item, i) => {
           return <a key={i} onClick={() => {
             selectSection(item.name)
-          }} className="rounded cursor-pointer animeSection text-[var(--tx)] no-underline text-sm pb-1 text-center w-full ">
+          }} className="rounded cursor-pointer animeSection text-[var(--tx)]  no-underline text-sm pb-1 text-center w-full ">
             {item.name}
           </a>
         })}
@@ -40,7 +40,7 @@ export default function Page() {
       <main>
         {conteners.map((item, i) => {
           return <section key={i} id={item.name} className="relative h-screen ">
-            <div className={` diva top-[4.6rem]  w-[25vw] h-[4px] rounded-full absolute z-20 bg-[var(--theme-color)] `} style={{ "--p": `${i * 25}vw` }}></div>
+            <div className={` diva top-[4.6rem]  w-[31.5vw] h-[4px] rounded-full absolute z-20 bg-[var(--theme-color)] `} style={{ "--p": `${i * 34}vw` }}></div>
             <div className=" absolute bottom-0 w-full h-[85vh] overflow-auto">
 
               {item.div}
