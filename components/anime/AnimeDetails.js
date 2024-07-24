@@ -67,7 +67,7 @@ export default function AnimeDetails(promps) {
               onClick={() => {
                 setSlide(!slide);
               }}
-              className={`text-sm w-full p-4 pb-4 ${
+              className={`mb-3 text-sm w-full p-4 pb-4 ${
                 slide ? null : 'lg:h-20 h-16'
               } overflow-hidden cursor-pointer relative lg:text-lg`}
             >
@@ -151,7 +151,7 @@ export default function AnimeDetails(promps) {
               ></iframe>
             </div>
           </div>
-          <div className=" font-bold text-lg p-4 mt-4">
+          <div className=" w-full font-bold text-lg p-4 mt-4">
             <h1>Relations :</h1>
             <div className="w-full overflow-hidden grid lg:grid-cols-8  sm:grid-cols-5 grid-cols-3 gap-2 py-3">
             {data.relations.map((item,i)=>{

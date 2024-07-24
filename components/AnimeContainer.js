@@ -49,7 +49,7 @@ export default function AnimeContainer(promps) {
       />
 
       <div className="lg:text-[1.2vw]  sm:text-[2vw] text-[3vw] grid grid-cols-2 z-10 absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-[rgba(0,0,0,0.3)]">
-        <p className="col-span-2 [text-shadow:_0_0_10px_black]  font-medium  text-ellipsis whitespace-nowrap overflow-x-hidden text-center px-1">
+        <p className="col-span-2 [text-shadow:_0_0_10px_black]  font-medium  text-ellipsis whitespace-nowrap overflow-x-hidden overflow-y-hidden text-center px-1">
           { anime.title}
         </p>
 
