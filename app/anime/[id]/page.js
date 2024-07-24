@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+
 import { usePathname } from 'next/navigation';
 import AnimeDetails from '../../../components/anime/AnimeDetails';
 import AnimeEpisodes from '../../../components/anime/AnimeEpisodes';
