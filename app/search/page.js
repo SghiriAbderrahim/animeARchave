@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Load from '../../components/loading';
 import List from '../../components/List';
 import { useSearch } from '@/stores/store';
+import SearchInput from '../../components/SearchInput'
 export default function Search() {
   const reLoad = useSearch((state) => state.reLoad);
   const searchValue = useSearch((state) => state.search);
@@ -77,17 +78,7 @@ export default function Search() {
 
   return (
     <div className="overflow-auto pt-14 flex flex-col">
-      <div className=" my-1 flex justify-center w-full gap-2">
-        <input
-          onInput={() => {
-            searching();
-          }}
-          id="inSearch"
-          className="outline-none text-[var(--tx)] text-sm font-bold w-3/4  px-2 py-1 border-2  bg-[var(--gr2)] focus:bg-[var(--bg)] rounded-full border-[var(--gr2)] focus:border-[var(--theme-color)] "
-          type="search"
-          placeholder="Search for anime..."
-        />
-      </div>
+      <SearchInput search={searching()} />
       <List />
       {isLoading && <Load />}
       {error && <p>Error: {error.message}</p>}
